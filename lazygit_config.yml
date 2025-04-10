@@ -1,0 +1,2 @@
+os:
+  copyToClipboardCmd: ~/copy.sh {{text}}
