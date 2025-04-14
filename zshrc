@@ -19,8 +19,8 @@ export MANPAGER="less -X" # Don’t clear the screen after quitting a manual pag
 export EDITOR="vim"
 export TERM="screen-256color"
 export CLICOLOR=1
-export LSCOLORS=Gxfxcxdxbxegedabagacad
-export LS_COLORS=Gxfxcxdxbxegedabagacad
+# export LSCOLORS=Gxfxcxdxbxegedabagacad
+# export LS_COLORS=Gxfxcxdxbxegedabagacad
 
 function get_ruby_version() {
   ruby -v | awk '{print $1 " " $2}'
@@ -107,7 +107,7 @@ export PR_BOLD_RED PR_BOLD_GREEN PR_BOLD_YELLOW PR_BOLD_BLUE
 export PR_BOLD_WHITE PR_BOLD_BLACK
 
 # Clear LSCOLORS
-unset LSCOLORS
+# unset LSCOLORS
 # }}}
 
 # Set Options {{{
@@ -163,3 +163,18 @@ function precmd {
   # Put the parentdir/currentdir in the tab
   echo -ne "\e]1;$PWD:h:t/$PWD:t\a"
 }
+
+# export PROMPT="$(get_recovery_warning)\
+# $(account_info)\
+# %{$fg_bold[green]%}%m:\
+# %{$reset_color%}%{$fg_bold[blue]%}%~\
+# %{$reset_color%}%{$fg_bold[green]%}$(git_prompt_info)\
+# %{$reset_color%}%{$fg[cyan]%}$(k8s_context)\
+# %{$reset_color%}%{$fg_bold[red]%}%(?..(rc=%?%) )\
+# %{$reset_color%}%#%{$fg_bold[gray]%}$(job_info)\
+# %{$reset_color%}"
+export PROMPT="$(get_recovery_warning)\
+%{$reset_color%}%{$fg_bold[green]%}$(git_prompt_info)\
+%{$reset_color%}%{$fg_bold[blue]%}%~ \
+%{$reset_color%}%{$fg_bold[red]%}❯ \
+%{$reset_color%}"
