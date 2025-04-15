@@ -1,8 +1,8 @@
 
 export NVIM_APPNAME=personal_nvim
 
-alias pbcopy="xsel --clipboard --input"
-alias pbpaste="xsel --clipboard --output"
+# alias pbcopy="xsel --clipboard --input"
+# alias pbpaste="xsel --clipboard --output"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
