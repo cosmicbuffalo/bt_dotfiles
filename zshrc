@@ -3,6 +3,7 @@ export NVIM_APPNAME=personal_nvim
 
 # alias pbcopy="xsel --clipboard --input"
 # alias pbpaste="xsel --clipboard --output"
+alias open='~/copy.sh'
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -144,8 +145,10 @@ setopt complete_in_word # Allow completion from within a word/phrase
 unsetopt menu_complete # do not autoselect the first completion entry
 
 # ===== Correction
-setopt correct # spelling correction for commands
-setopt correctall # spelling correction for arguments
+# setopt correct # spelling correction for commands
+# setopt correctall # spelling correction for arguments
+unsetopt correct
+unsetopt correctall
 
 # ===== Prompt
 setopt prompt_subst # Enable parameter expansion, command substitution, and arithmetic expansion in the prompt
