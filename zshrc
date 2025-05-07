@@ -1,5 +1,5 @@
-
-export NVIM_APPNAME=personal_nvim
+alias pvim="NVIM_APPNAME=personal_nvim nvim"
+alias bvim="NVIM_APPNAME=bt_nvim nvim"
 
 # alias pbcopy="xsel --clipboard --input"
 # alias pbpaste="xsel --clipboard --output"
