@@ -10,6 +10,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias vi="nvim"
 alias r="source ~/.zshrc"
 alias pr='open "https://github.com/$(git remote get-url origin | sed -E "s/.*:(.+)\/(.+).git/\1\/\2/")/pull/new/$(git rev-parse --abbrev-ref HEAD)"'
+alias git_check='~/personalized_dotfiles/find_git_changes.sh'
 
 
 
