@@ -181,3 +181,12 @@ export PROMPT="$(get_recovery_warning)\
 %{$reset_color%}%{$fg_bold[blue]%}%~ \
 %{$reset_color%}%{$fg_bold[red]%}❯ \
 %{$reset_color%}"
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+eval "$(~/.local/bin/mise activate zsh)"
+
+# opencode
+export PATH=/home/admin/.opencode/bin:$PATH
+
